@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bish-Bosh</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Bish-Bosh Game</h1>
+      <!-- Implementation one -->
+      <div class="versionOne">
+        <h2>Bish-Bosh v 1.0</h2>
+        <p>
+          Bish-Bosh lists all numbers between 1 and 100, but some exceptions: If
+          the number is evenly divisible with 3, 'Bish' is listed instead of the
+          number. If the number is evenly divisible by 4, 'Bosh' is listed
+          instead. If the number is evenly divisible by both 3 and 4,
+          'Bish-Bosh' is listed instead of the number.
+        </p>
+        <p>For first implementation, check the console.</p>
+      </div>
+
+      <hr />
+
+      <!-- Implementation Two -->
+
+      <h2>Bish-Bosh v 2.0</h2>
+      <p>
+        In this version, you can set custom values to replace numbers divisible
+        by 3 (Bish) and 4 (Bosh), and you can set the loop length as well.
+      </p>
+      <div class="versionTwo">
+        <!-- Form section -->
+        <form class="form" id="setValue" action="#">
+          <label for="bishValue">Bish:</label>
+          <input type="text" name="Bish" id="bishValue" />
+          <label for="boshValue">Bosh:</label>
+          <input type="text" name="Bosh" id="boshValue" />
+          <label for="loopLength">Length:</label>
+          <input type="text" name="Length" id="loopLength" />
+          <input type="button" name="start" id="start" value="Start" />
+        </form>
+
+        <div id="output"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
